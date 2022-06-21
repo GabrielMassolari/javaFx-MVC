@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmvc.controller.FXMLAnchorPaneGraficosValorPorMesController">
+   <children>
+      <Label layoutX="52.0" layoutY="23.0" text="Ano" />
+      <Button fx:id="buttonGerarGrafico" layoutX="263.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleButtonGerarGrafico" text="Gerar Gráfico" />
+      <BarChart fx:id="barChart" layoutX="24.0" layoutY="54.0" prefHeight="332.0" prefWidth="564.0">
+        <xAxis>
+          <CategoryAxis fx:id="categoryAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="numberAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <ComboBox fx:id="comboBoxAnos" layoutX="83.0" layoutY="19.0" prefHeight="25.0" prefWidth="178.0" promptText="Escolha o ano desejado..." />
+   </children>
+</AnchorPane>
